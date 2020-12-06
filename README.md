@@ -15,7 +15,3 @@ This is a portfolio boilerplate for 1st and 2nd year of students at UC Berkeley 
 **2. To customize the portfolio main page:**
 - Modify the `src/index.hbs` and the `src/index-partials/project.hbs` files
 - Modify the font style, font size, font color etc, go to change the `src/sass/main.scss`
-
-**3. To customize the child page:**
-- Modify the `src/page.hbs` and the `src/index-partials/project.hbs` files
-- Modify the font style, font size, font color etc, go to change the `src/sass/main.scss`

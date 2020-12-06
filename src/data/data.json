@@ -5,53 +5,41 @@
         "image": "images/placeholder-1.jpg",
         "slug": "project1",
         "headline": "Project 1",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "feature": true,
-        "screenshots": ["placeholder-1.jpg"]
+        "feature": true
     }, {
         "publisher": "Publisher 2",
         "link": "https://journalism.berkeley.edu",
         "image": "images/placeholder.jpg",
         "slug": "project2",
         "headline": "Project 2",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "feature": true,
-        "screenshots": ["placeholder.jpg", "placeholder-1.jpg"]
+        "feature": true
     }, {
         "publisher": "Publisher 3",
         "link": "https://journalism.berkeley.edu",
         "image": "images/placeholder.jpg",
         "slug": "project3",
         "headline": "Project 3",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "feature": false,
-        "screenshots": ["placeholder.jpg"]
+        "feature": false
     }, {
         "publisher": "Publisher 4",
         "link": "https://journalism.berkeley.edu",
         "image": "images/placeholder-1.jpg",
         "slug": "project4",
         "headline": "Project 4",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "feature": false,
-        "screenshots": ["placeholder-1.jpg"]
+        "feature": false
     }, {
         "publisher": "Publisher 5",
         "link": "https://journalism.berkeley.edu",
         "image": "images/placeholder-1.jpg",
         "slug": "project5",
         "headline": "Project 5",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "feature": true,
-        "screenshots": ["placeholder-1.jpg"]
+        "feature": true
     }, {
         "publisher": "Publisher 6",
         "link": "https://journalism.berkeley.edu",
         "image": "images/placeholder.jpg",
         "slug": "project6",
         "headline": "Project 6",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "feature": true,
-        "screenshots": ["placeholder.jpg"]
+        "feature": true
     }]
 }

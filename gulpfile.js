@@ -63,25 +63,6 @@ const compileFont = (done) => {
     done()
 }
 
-/**
- * Build individual pages based on the data.json file
- */
-const buildPages = (done) => {
-    const data = JSON.parse(fs.readFileSync('src/data/data.json', 'utf8'));
-    const pages = data['projects'].map((d) => {
-        // Right here, we return a function per country
-        return () =>
-            gulp.src(['src/page.hbs'])
-            .pipe(handlebars(d, options))
-            .pipe(rename('index.html'))
-            .pipe(gulp.dest('pages/' + d.slug));
-    });
-
-    return gulp.series(...pages, (seriesDone) => {
-        seriesDone();
-        done();
-    })();
-}
 
 // Clean assets
 const clean = () => {
@@ -92,14 +73,13 @@ const clean = () => {
 // Watch changes in the files
 gulp.task('default', function() {
     // Compile all files first
-    gulp.task('default', gulp.series(clean, compileScript, compileStyle, compileFont, compileIndex, buildPages))
+    gulp.task('default', gulp.series(clean, compileScript, compileStyle, compileFont, compileIndex))
         // Watch the index.hbs, page.hbs, partials 
     gulp.watch([
         'src/data/data.json',
         'src/index.hbs',
-        'src/index-partials/*.hbs',
-        'src/page.hbs'
-    ], gulp.series(compileIndex, buildPages));
+        'src/index-partials/*.hbs'
+    ], gulp.series(compileIndex));
     // Watch the main.scss stylesheet
     gulp.watch('src/sass/main.scss', gulp.series(compileStyle));
 
