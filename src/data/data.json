@@ -1,0 +1,57 @@
+{
+    "projects": [{
+        "pub": "Here is the publisher name",
+        "link": "https://journalism.berkeley.edu",
+        "imglink": "images/placeholder.jpg",
+        "slug": "project1",
+        "headline": "Here is the project name",
+        "intro": "Here is the project description",
+        "feature": true,
+        "screenshots": ["placeholder.jpg"]
+    }, {
+        "pub": "Here is the publisher name",
+        "link": "https://journalism.berkeley.edu",
+        "imglink": "images/placeholder.jpg",
+        "slug": "project2",
+        "headline": "Here is the project name",
+        "intro": "Here is the project description",
+        "feature": true,
+        "screenshots": ["placeholder.jpg"]
+    }, {
+        "pub": "Here is the publisher name",
+        "link": "https://journalism.berkeley.edu",
+        "imglink": "images/placeholder.jpg",
+        "slug": "project3",
+        "headline": "Here is the project name",
+        "intro": "Here is the project description",
+        "feature": false,
+        "screenshots": ["placeholder.jpg"]
+    }, {
+        "pub": "Here is the publisher name",
+        "link": "https://journalism.berkeley.edu",
+        "imglink": "images/placeholder.jpg",
+        "slug": "project4",
+        "headline": "Here is the project name",
+        "intro": "Here is the project description",
+        "feature": false,
+        "screenshots": ["placeholder.jpg"]
+    }, {
+        "pub": "Here is the publisher name",
+        "link": "https://journalism.berkeley.edu",
+        "imglink": "images/placeholder.jpg",
+        "slug": "project5",
+        "headline": "Here is the project name",
+        "intro": "Here is the project description",
+        "feature": true,
+        "screenshots": ["placeholder.jpg"]
+    }, {
+        "pub": "Here is the publisher name",
+        "link": "https://journalism.berkeley.edu",
+        "imglink": "images/placeholder.jpg",
+        "slug": "project6",
+        "headline": "Here is the project name",
+        "intro": "Here is the project description",
+        "feature": true,
+        "screenshots": ["placeholder.jpg"]
+    }]
+}

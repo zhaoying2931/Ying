@@ -1,0 +1,337 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.defs-only {
+  position: absolute;
+  height: 0; width: 0;
+  overflow: none;
+  left: -100%;
+}
+
+section{
+  height: auto;
+  min-height: 60vh;
+  position:relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+section#intro{
+  display:flex;
+  flex-direction:project;
+  justify-content: center;
+  flex-wrap:wrap;
+  align-items: center;
+  padding-left:5%;
+  padding-right:5%;
+  .intro-text{
+    width: 100%;
+    z-index: 99;
+    h1{
+      color: #222;
+      margin: 0 auto;
+      font-size: 100px;
+      line-height: 1em;
+      font-weight:700;
+      letter-spacing: 0.5px;
+    }
+    h5{
+      color:#222;
+      font-weight: 100;
+      font-size:24px;
+      margin-top:10px;
+      margin-bottom:20px;
+      a{
+        color: #222;
+        border-bottom:1px solid #222;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+section#projects{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap:wrap;
+  align-items: flex-start;
+  padding-left:5%;
+  padding-right:5%;
+
+  li.project{
+    width: 50%;
+    vertical-align: top;
+    position:relative;
+    list-style-type: none;
+
+  }
+  //make the second div align bottom
+  li:nth-child(2){
+    align-self: flex-end;
+  }
+  //make the odd numbered div float right
+  li:nth-child(2n){
+    div.project-wrapper{
+      float:left;
+    }
+  }
+  // make the even number div float-left
+  li:nth-child(2n+1){
+    div.project-wrapper{
+      float:right;
+    }
+  }
+  .project a {
+    text-decoration: none;
+    color:#222;
+    cursor: pointer;
+  }
+  .project a:hover {
+      text-decoration: none;
+  }
+  .project-wrapper {
+      width: 50%;
+      padding: 5px;
+
+      .image-wrapper{
+        width: 100%;
+        position:relative;
+
+        &:before{
+          content:"";
+          position:absolute;
+          width:100%;
+          height:100%;
+          top: 0px;
+          // background: linear-gradient(45deg, rgba(255, 192, 203, 0.4), rgba(0, 0, 255, 0.4));
+          background: rgba(0, 0, 0, 0.1);
+          z-index: 1;
+        }
+      }
+
+      img {
+          width: 100%;
+          -webkit-filter: grayscale(10%); /* Safari 6.0 - 9.0 */
+          filter: grayscale(10%);
+      }
+  }
+
+  .project-wrapper.feature {
+      width: 100%;
+      padding: 5px;
+
+      .image-wrapper{
+        width: 100%;
+        position:relative;
+
+        &:before{
+          content:"";
+          position:absolute;
+          width:100%;
+          height:100%;
+          top: 0px;
+          // background: linear-gradient(45deg, rgba(255, 192, 203, 0.4), rgba(0, 0, 255, 0.4));
+          background: rgba(0, 0, 0, 0.1);
+          z-index: 1;
+        }
+      }
+
+      img {
+          width: 100%;
+          -webkit-filter: grayscale(10%); /* Safari 6.0 - 9.0 */
+          filter: grayscale(10%);
+      }
+
+  }
+
+  p.headline  {
+      span{
+        font-weight: 500;
+          -webkit-font-smoothing: antialiased;
+      }
+      font-size: 18px;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1em;
+      padding-top: 15px;
+      margin-bottom:0;
+      color: #333;
+
+  }
+  p.pub  {
+      span{
+        font-weight: 300;
+          -webkit-font-smoothing: antialiased;
+      }
+      font-size: 14px;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.4em;
+      padding-top: 5px;
+      color: #333;
+
+  }
+  .project:hover{
+    .project-wrapper img{
+      -webkit-filter: none; /* Safari 6.0 - 9.0 */
+      filter: none;
+      transition: 1s;
+
+    }
+    .image-wrapper:before{
+      background: transparent;
+    }
+    p.pub{
+      color: black;
+      opacity: 1;
+    }
+
+  }
+}
+
+
+// social links
+
+.text-center.icon{
+  text-align: left;
+  padding-left: 0px;
+}
+.fa-2x {
+font-size: 1.4em !important;
+color: #333;
+}
+
+ul a:hover {
+  text-decoration: none;
+}
+
+i {
+  color: #f7f7f7;
+}
+
+.icon .fa {
+  padding-right: 4.5px;
+  padding-left: 4.5px;
+}
+
+h5#copyright{
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+
+
+
+@media screen and (max-width: 660px) {
+  section#intro {
+    align-items: center;
+    padding-bottom: 20px;
+    .intro-text{
+      width: 100%;
+      h1{
+        font-size:76px !important;
+      }
+    }
+    min-height: 100vh;
+
+  }
+  section#projects{
+    li.project{
+      width: 100%;
+      .project-wrapper{
+        width: 100% !important;
+      }
+    }
+    p.pub{
+      position:relative !important;
+      width: 100% !important;
+      left: 0px !important;
+      border-top: 0px;
+      text-align:left !important;
+      margin-left: 0px !important;
+      padding-left: 0px !important;
+    }
+  }
+  .project-page{
+    .project-visual-wrapper{
+      h2{
+        font-size: 59px !important;
+      }
+    }
+  }
+
+}
+
+@keyframes animatedBackground{
+to{
+    background-position: 200% center;
+  }
+}
+
+//styling for each project pop up 
+.project-page{
+  text-align: center;
+  .project-visual-wrapper{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+    h2{
+      width: 100%;
+      max-width: 620px;
+      text-align: center;
+      margin: 70px auto;
+      font-size: 82px;
+      line-height: 1.2em;
+      letter-spacing: .5px;
+      color: #000;
+      font-weight: 600;
+    }
+    img.project-screenshot{
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    img.project-screenshot.small{
+      max-width: 620px;
+    }
+    p{
+      font-size: 16px; 
+      line-height: 1.8em;
+      width: 100%; 
+      max-width: 620px;
+      margin: 0 auto;
+      font-weight: 300;
+      margin-bottom: 5px;
+      text-align: left;
+    }
+    p.project-link{
+      margin-bottom: 80px;
+      text-align: center;
+    }
+     a{
+      margin-bottom: 30px;
+    }
+  }
+ 
+  a.home{
+    color: black;
+    opacity: 0.6;
+    &:hover{
+      opacity: 1;
+      text-decoration: none;
+    }
+  }
+  h5{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 40px;
+  }
+
+}
