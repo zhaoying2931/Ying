@@ -19,10 +19,8 @@ const options = {
     batch: ['src/index-partials'],
 };
 
-const data = JSON.parse(fs.readFileSync('src/data/data.json', 'utf8'));
-
-
 const compileIndex = (done) => {
+    const data = JSON.parse(fs.readFileSync('src/data/data.json', 'utf8'));
     gulp.src(['src/index.hbs'])
         .pipe(handlebars(data, options))
         .pipe(rename('index.html'))
@@ -69,6 +67,7 @@ const compileFont = (done) => {
  * Build individual pages based on the data.json file
  */
 const buildPages = (done) => {
+    const data = JSON.parse(fs.readFileSync('src/data/data.json', 'utf8'));
     const pages = data['projects'].map((d) => {
         // Right here, we return a function per country
         return () =>
@@ -90,12 +89,13 @@ const clean = () => {
 }
 
 
-// Compile all files on init 
-gulp.task('default', gulp.series(clean, compileScript, compileStyle, compileFont, compileIndex, buildPages))
-    // Watch changes in the files
-gulp.task('watch', function() {
-    // Watch the index.hbs, page.hbs, partials 
+// Watch changes in the files
+gulp.task('default', function() {
+    // Compile all files first
+    gulp.task('default', gulp.series(clean, compileScript, compileStyle, compileFont, compileIndex, buildPages))
+        // Watch the index.hbs, page.hbs, partials 
     gulp.watch([
+        'src/data/data.json',
         'src/index.hbs',
         'src/index-partials/*.hbs',
         'src/page.hbs'
