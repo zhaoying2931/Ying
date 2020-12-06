@@ -6,7 +6,8 @@ var gulp = require('gulp'),
     addsrc = require('gulp-add-src'),
     handlebars = require('gulp-compile-handlebars'),
     fs = require('fs'),
-    rename = require('gulp-rename');
+    rename = require('gulp-rename'),
+    del = require("del");
 
 
 /**
@@ -83,13 +84,18 @@ const buildPages = (done) => {
     })();
 }
 
+// Clean assets
+const clean = () => {
+    return del(['./dist/', './pages/']);
+}
+
+
 // Compile all files on init 
-gulp.task('default', gulp.series(compileScript, compileStyle, compileFont, compileIndex, buildPages))
+gulp.task('default', gulp.series(clean, compileScript, compileStyle, compileFont, compileIndex, buildPages))
     // Watch changes in the files
 gulp.task('watch', function() {
     // Watch the index.hbs, page.hbs, partials 
     gulp.watch([
-        'src/data/data.json',
         'src/index.hbs',
         'src/index-partials/*.hbs',
         'src/page.hbs'
